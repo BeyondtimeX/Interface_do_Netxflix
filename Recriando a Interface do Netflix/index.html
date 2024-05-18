@@ -3,53 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-  
-    <!--responsividade-->
-<link rel="stylesheet" href="style/responsive.css">
-
-
-    <!--owl css-->
-<link rel="stylesheet" href="style/owl/owl.carousel.min.css">
-<link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
-
-
     <title>NETFLIX CLONE</title>
     <link rel="shortcut icon" href="img/icone.png">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <style>
+        /* Estilos adicionais */
+        .filme-principal {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .capa-filme {
+            width: 100%;
+            display: block;
+        }
+
+        .descricao-filme {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .titulo {
+            margin-bottom: 10px;
+        }
+
+        .sinopse {
+            margin-bottom: 20px;
+        }
+
+        .botoes {
+            display: flex;
+            align-items: center;
+        }
+
+        .botao {
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #e50914;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botao i {
+            margin-right: 5px;
+        }
+
+        .botao:hover {
+            background-color: #ff0b24;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="menulogo">
-            <img class="logo" src="img/logo.png" alt="" >
-        
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Mais recentes</a>
-                <a href="#">Minha lista</a>
-            </nav>
+                <img class="logo" src="img/logo.png" alt="Netflix Logo">
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Mais recentes</a>
+                    <a href="#">Minha lista</a>
+                </nav>
             </div>
-            
             <div class="login">
-            <nav>
-                <i class="fas fa-search"></i>
-                <i class="fas fa-gift"></i>
-                <i class="fas fa-bell"></i>
-                <i class="fas fa-sign-in-alt"></i>
-            </nav>
-        </div>
-
+                <nav>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-gift"></i>
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-sign-in-alt"></i>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
         <div class="filme-principal">
-            <div class="container">
+            <img class="capa-filme" src="img/capa_stranger.png" alt="Capa do Filme Stranger Things">
+            <div class="descricao-filme">
                 <h3 class="titulo">STRANGER THINGS</h3>
                 <p class="sinopse">Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são segredos, forças sobrenaturais e uma menina.</p>
-          
                 <div class="botoes">
                     <button role="button" class="botao">
                         <i class="fas fa-play"></i>
@@ -66,25 +112,23 @@
 
     <div class="carrousel-filmes">
         <div class="owl-carousel owl-theme">
-            <div class="item"> <img class="box-filme" src="img/mini1.jpg" alt=""></div>
-            <div class="item"> <img class="box-filme" src="img/mini2.jpg" alt=""></div>
-            <div class="item"> <img class="box-filme" src="img/mini3.jpg" alt=""></div>
-            <div class="item"> <img class="box-filme" src="img/mini4.jpg" alt=""></div>
-            <div class="item"> <img class="box-filme" src="img/mini5.jpg" alt=""></div>
-            <div class="item"> <img class="box-filme" src="img/mini6.jpg" alt=""></div>
-            <div class="item"> <img class="box-filme" src="img/mini7.jpg" alt=""></div>
-            <div class="item"> <img class="box-filme" src="img/mini8.jpg" alt=""></div>
-            <div class="item"> <img class="box-filme" src="img/mini9.jpg" alt=""></div>
-            <div class="item"> <img class="box-filme" src="img/mini10.jpg" alt=""></div>
+            <div class="item"> <img class="box-filme" src="img/mini1.jpg" alt="Filme 1"></div>
+            <div class="item"> <img class="box-filme" src="img/mini2.jpg" alt="Filme 2"></div>
+            <div class="item"> <img class="box-filme" src="img/mini3.jpg" alt="Filme 3"></div>
+            <div class="item"> <img class="box-filme" src="img/mini4.jpg" alt="Filme 4"></div>
+            <div class="item"> <img class="box-filme" src="img/mini5.jpg" alt="Filme 5"></div>
+            <div class="item"> <img class="box-filme" src="img/mini6.jpg" alt="Filme 6"></div>
+            <div class="item"> <img class="box-filme" src="img/mini7.jpg" alt="Filme 7"></div>
+            <div class="item"> <img class="box-filme" src="img/mini8.jpg" alt="Filme 8"></div>
+            <div class="item"> <img class="box-filme" src="img/mini9.jpg" alt="Filme 9"></div>
+            <div class="item"> <img class="box-filme" src="img/mini10.jpg" alt="Filme 10"></div>
         </div>
     </div>
 
-   
-
+    <!-- Scripts -->
     <script src="https://kit.fontawesome.com/e49dc08fa9.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
-
 </body>
 </html>
