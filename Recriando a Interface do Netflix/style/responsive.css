@@ -1,19 +1,23 @@
-@media screen and (max-width:700px){
-    header .container{
-    display: flex;
-    flex-direction: column;
-}
-
-    .botao{
-        margin-top: 5px;
-        width: 300px;
-        }
-
-}
-
-@media screen and (min-width:1000px){
-    .sinopse{
-        width: 50%;
+/* Estilos para telas menores que 700px de largura */
+@media screen and (max-width: 700px) {
+    /* Estilos para o cabeçalho */
+    header .container {
+        display: flex;
+        flex-direction: column;
     }
-    
+
+    /* Estilos para o botão */
+    .botao {
+        margin-top: 5px;
+        width: 100%; /* Alterado para ocupar a largura total do contêiner */
+        max-width: 300px; /* Limitado a 300px de largura máxima */
+    }
+}
+
+/* Estilos para telas maiores ou iguais a 1000px de largura */
+@media screen and (min-width: 1000px) {
+    /* Estilos para a sinopse */
+    .sinopse {
+        width: 50%; /* Alterado para ocupar 50% da largura do contêiner pai */
+    }
 }
